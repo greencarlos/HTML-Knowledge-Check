@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Styling to make sure the page is easier to read -->
+		<style>
+			body {
+				text-align: center;
+			}
+			section {
+				margin: 0 auto;
+				width: 10%;
+				text-align: left;
+			}
+			span {
+				display: flex;
+				flex-direction: column;
+			}
+			ul {
+				display: flex;
+				flex-direction: row;
+				margin: 0 auto;
+				justify-content: center;
+			}
+			li {
+				list-style-type: none;
+				width: 10%;
+			}
+			s {
+				color: red;
+			}
+			table {
+				margin: 0 auto;
+			}
+			div > img {
+				border-radius: 50%;
+			}
+			form > input {
+				margin: 0 auto;
+				width: 10%;
+			}
+			.price {
+				color: green;
+			}
+		</style>
+		<title>Module 1 HTML Assignment</title>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+		<br />
+		<!-- Works for me locally.. Redirects to another submission confirmation page -->
+		<form
+			action="/Users/carlosgreen/Desktop/App%20Academy/HTMLKnowledgeCheck/submit.html"
+		>
+			<label for="name">Name:</label>
+			<br />
+			<input type="text" id="name" placeholder="Enter name" required />
+			<br />
+
+			<label for="email">Email:</label>
+			<br />
+			<input type="email" id="email" placeholder="Enter email" required />
+			<br />
+
+			<!-- Phone number because why not? -->
+			<label for="phone">Phone:</label>
+			<br />
+			<input
+				type="number"
+				id="phone"
+				placeholder="Enter phone number"
+				min="11111111"
+				max=""
+			/>
+			<br />
+
+			<br />
+			<section id="find">
+				<p>How did you find us?</p>
+				<input type="radio" id="Google" name="Google" value="Google" />
+				<label for="Google">Google</label><br />
+				<input type="radio" id="Facebook" name="Facebook" value="Facebook" />
+				<label for="Facebook">Facebook</label><br />
+				<input type="radio" id="Youtube" name="Youtube" value="Youtube" />
+				<label for="Youtube">Youtube</label><br />
+				<input type="radio" id="Twitter" name="Twitter" value="Twitter" />
+				<label for="Twitter">Twitter</label><br />
+				<input type="radio" id="LinkedIn" name="LinkedIn" value="LinkedIn" />
+				<label for="LinkedIn">LinkedIn</label><br />
+				<input type="radio" id="TikTok" name="TikTok" value="TikTok" />
+				<label for="TikTok">TikTok</label><br />
+				<input type="radio" id="Instagram" name="Instagram" value="Instagram" />
+				<label for="Instagram">Instagram</label><br />
+				<input type="radio" id="Other" name="Other" value="Other" />
+				<label for="Other">Other</label><br />
+				<textarea
+					id="OtherPlaces"
+					name="OtherPlaces"
+					value="If choose other enter details here..."
+				></textarea>
+			</section>
+			<br />
+			<br />
+
+			<label for="feedback">Any other feedback?</label>
+			<br />
+			<textarea
+				id="feedback"
+				placeholder="Enter any more feedback you may have"
+			></textarea>
+			<br />
+			<br />
+
+			<br />
+			<br />
+			<input id="submit" type="submit" value="Submit" />
+		</form>
+		<br />
+		<br />
+		<br />
+
+		<table>
+			<tr>
+				<th>Product Name</th>
+				<th>Price</th>
+				<th>Quantity</th>
+			</tr>
+
+			<!-- Discount prices for our products -->
+			<!-- Because at these prices! The more you BUY, the more your SAVE!-->
+			<tr>
+				<td>Socks</td>
+				<td class="price"><b>$14.95</b> <s>$29.95</s></td>
+				<td>3</td>
+			</tr>
+
+			<tr>
+				<td>T-Shirt</td>
+				<td class="price"><b>$24.95</b> <s>$49.95</s></td>
+				<td>2</td>
+			</tr>
+
+			<tr>
+				<td>Pants</td>
+				<td class="price"><b>$34.95</b> <s>$59.95</s></td>
+				<td>3</td>
+			</tr>
+		</table>
+
+		<img src="https://placehold.co/300x200" />
+
+		<h1 id="home">Home</h1>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
+			ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
+			duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar
+			vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
+			malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos.
+		</p>
+
+		<div>
+			<img src="https://placehold.co/500x400" />
+		</div>
+
+		<h1 id="about">About Us</h1>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
+			ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
+			duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar
+			vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
+			malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos.
+		</p>
+
+		<img src="https://placehold.co/800x700" />
+
+		<h1 id="contact">Contact Us</h1>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
+			ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
+			duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar
+			vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
+			malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+			faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+			pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+			Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
+			nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+			aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
+			himenaeos.
+		</p>
+
+		<img src="https://placehold.co/1500x1400" />
+	</body>
+</html>
